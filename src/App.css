@@ -1,0 +1,306 @@
+.App {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Navbar.css */
+
+.corner-logo {
+  height: 150px;
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 50;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* ScrollUpButton.css */
+
+.scroll-up-button {
+  background-color: rgb(128,128,128,0.5);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  z-index: 50;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Portada.css */
+
+.portada-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada-container > * {
+  font-family: "BankGothic";
+}
+
+.header-block {
+  width: 100vw;
+  color: white;
+  background-color: rgb(128,128,128,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.header-borde-grueso {
+  border: 2px solid white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-button {
+  padding: 0.5rem 0.5rem;
+  background-color: white;
+  color: #1b03a3;
+  border: none;
+}
+
+.header-button > h5 {
+  margin: 0;
+}
+
+.header-button:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Descripcion.css */
+
+.desc-container {
+  height: 1700px;
+  width: 60vw;
+  margin: 2rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.desc-texto {
+  height: 100%;
+  width: 30vw;
+  padding: 3rem 1rem;
+  background-color: white;
+  color: #1b03a3;
+  border: none;
+}
+
+.desc-vertical-img-container {
+  height: 100%;
+  width: 30vw;
+  max-height: 1600px;
+  margin: 50px 0;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-inline: auto;
+}
+
+.gallery-panel {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.5s ease-in-out;
+}
+
+.gallery-panel:hover {
+  flex: 2.5;
+}
+
+.gallery-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.car-img {
+  width: 70%;
+  margin: auto
+}
+
+/* Redes.css */
+
+.redes-container {
+  width: 60vw;
+  height: 20vw;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.redes-iconos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.social {
+  width: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social:hover {
+  width: 200px;
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.tiktok {
+  color: black;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  /* color: #8a3ab9; */
+  color: #d6249f;
+}
+
+/* Contacto.css */
+
+.contacto-container {
+  width: 100vw;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contacto-header {
+  width: 100%;
+  display: inline-block;
+  background-color: #1b03a3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-formulario {
+  width: 100%;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+}
+
+.formInput {
+  padding: 15px 10px;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.submit-btn {
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.map-container {
+  height: 10vh;
+  width: 10vw;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .portada-container {
+    background-color: #1b03a3;
+  }
+
+  .desc-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-between;
+    gap: 0;
+  }
+}
