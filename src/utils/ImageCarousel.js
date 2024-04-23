@@ -9,6 +9,7 @@ const ImageCarousel = (imgSources) => {
         <div style={{ display: "block", width: "100%", padding: 0 }}>
             <Carousel>
                 {imgArray?.map((element, index) => {
+                    console.log(element);
                     return(
                         <Carousel.Item key={`car-item-${index}`} interval={1500}> 
                             <img 

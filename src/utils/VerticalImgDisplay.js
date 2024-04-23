@@ -13,14 +13,12 @@ const VerticalImgDisplay = (imgSources) => {
     return(
         <div className="desc-vertical-img-container">
             {imgArray?.map((element, index) => {
-                console.log(element.src);
                 return (
                     // <div className="img-box" style={{background: `url(/assets/${element})`, backgroundSize: "cover", backgroundPosition: "center"}} key={`img-box-${index}`}> 
                     <div className="gallery-panel" key={`gallery-panel-${index}`}>
                         <img 
-                            // className="d-block car-img"
-                            // src={require(`../assets/${String(element.src).split("/")[2]}`)}
-                            src={element.src}
+                            className="d-block car-img"
+                            src={require(`../assets/${String(element.src).split("/")[2]}`)}
                             alt="Image One"
                             onClick={() => setLightboxIndex(index)}
                         />

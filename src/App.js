@@ -6,6 +6,7 @@ import useScreenWidth from "./utils/useScreenWidth";
 
 import Portada from "./components/Portada";
 import Descripcion from "./components/Descripcion";
+import Tarifas from "./components/Tarifas";
 import Redes from "./components/Redes";
 import Contacto from "./components/Contacto";
 import "./App.css";
@@ -34,6 +35,7 @@ function App() {
       <div className="App">
         <Portada width={screenWidth}/>
         <Descripcion width={screenWidth}/>
+        <Tarifas />
         <Redes />
         <Contacto />
       </div>

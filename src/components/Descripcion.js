@@ -7,16 +7,16 @@ import VerticalImgDisplay from "../utils/VerticalImgDisplay";
 const Descripcion = (width) => {
 
     const images = [
-        // {src: "../assets/Zarautz-Altxa-2023_1.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_2.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_3.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_4.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_1.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_2.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_3.jpg"},
-        // {src: "../assets/Zarautz-Altxa-2023_4.jpg"},
-        {src: "https://drive.google.com/uc?export=view&id=1qQxisns8W-8jMB0eeV-IWqePwXY3ez77"},
-        {src: "https://drive.google.com/file/d/1qQxisns8W-8jMB0eeV-IWqePwXY3ez77/view?usp=sharing"}
+        {src: "../assets/Zarautz-Altxa-2023_1.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_2.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_3.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_4.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_1.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_2.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_3.jpg"},
+        {src: "../assets/Zarautz-Altxa-2023_4.jpg"},
+        //{src: "https://drive.google.com/uc?export=view&id=1qQxisns8W-8jMB0eeV-IWqePwXY3ez77"},
+        //{src: "https://drive.google.com/file/d/1qQxisns8W-8jMB0eeV-IWqePwXY3ez77/view?usp=sharing"}
     ]
 
     return (
